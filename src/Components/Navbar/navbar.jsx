@@ -1,6 +1,8 @@
 import React from "react";
 import { Tb360View } from "react-icons/tb";
 import "./Navbar.css"
+import { RiDoorClosedLine } from "react-icons/ri";
+import { PiDotsThreeOutlineBold } from "react-icons/pi";
 
 
 function Navbar() {
@@ -8,26 +10,36 @@ function Navbar() {
         <section className="navSection">
             <header className="header flex">
                 <div className="logoDiv">
-                    <h1>Webrafz<Tb360View /></h1>
+                    <h1>FlexStars<Tb360View className="icon" /></h1>
                 </div>
                 <div className="navBar">
                     <ul className="navlist flex">
                         <li className="navItem">
-                            <a href="#" className="navLink">home</a>
+                            <a href="#" className="navLink">Trabalhe conosco</a>
                         </li>
                         <li className="navItem">
-                            <a href="#" className="navLink">home</a>
+                            <a href="#" className="navLink">Ofertas natalinas</a>
                         </li>
                         <li className="navItem">
-                            <a href="#" className="navLink">home</a>
+                            <a href="#" className="navLink">Equipes aéreas</a>
                         </li>
                         <li className="navItem">
-                            <a href="#" className="navLink">home</a>
+                            <a href="#" className="navLink">Sobre nós</a>
                         </li>
+                        <button className="btn">
+                            <a href="#">Redirecionamento</a>
+                        </button>
                     </ul>
+                    <div className="porta">
+                        <RiDoorClosedLine className="icon" />
+                    </div>
+                </div>
+                <div className="togglenavbar">
+                    <PiDotsThreeOutlineBold />
                 </div>
             </header>
         </section>
     );
 }
+
 export default Navbar
