@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Tb360View } from "react-icons/tb";
 import "./Navbar.css"
 import { RiDoorClosedLine } from "react-icons/ri";
@@ -6,10 +6,15 @@ import { PiDotsThreeOutlineBold } from "react-icons/pi";
 
 
 function Navbar() {
+    const [active, setActive] = useState("navBar")
+    const shownav = () => {
+        setActive("navBar activeNavBar")
+    }
+
     return (
         <section className="navSection">
             <header className="header flex">
-                <div className="logoDiv">
+                <div className="logo">
                     <h1>FlexStars<Tb360View className="icon" /></h1>
                 </div>
                 <div className="navBar">
@@ -34,8 +39,8 @@ function Navbar() {
                         <RiDoorClosedLine className="icon" />
                     </div>
                 </div>
-                <div className="togglenavbar">
-                    <PiDotsThreeOutlineBold />
+                <div className="togglenavbar" onClick={shownav}>
+                    <PiDotsThreeOutlineBold className="icon"/>
                 </div>
             </header>
         </section>

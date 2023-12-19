@@ -17,11 +17,25 @@
     display: flex;
     background: var(--whiteColorDeam);
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     padding: 1rem;
     /*PRIORIDADE<assim se comenta em HTML/CSS*/
     z-index: 1000;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.37);
+
+    .logo {
+        color: var(--blackColor);
+        font-weight: 600;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+
+        .icon {
+            font-size: 25px;
+            color: var(--PrimaryColor);
+        }
+    }
 
     @media screen and (max-width: 768px) {
         .navBar {
@@ -30,19 +44,71 @@
             width: 80%;
             position: absolute;
             border-radius: 1rem;
-            top: 6rem;
+            top: -500rem;
             left: 50%;
             transform: translate(-50%);
             z-index: 2000;
-            box-shadow: 0 2px 4px rgba(2,15,29,0.9);
+            box-shadow: 0 2px 4px rgba(2, 15, 29, 0.9);
+            padding: 1rem;
+
+            .navlist {
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                margin: auto;
+                padding: .5rem 0;
+
+                .navItem {
+                    padding: 0.4rem 0;
+
+                    .navLink {
+                        color: var(--textColor);
+                        font-size: 1rem;
+                        font-weight: 600;
+
+                        &:hover {
+                            color: var(--PrimaryColor);
+                        }
+                    }
+                }
+
+                .btn {
+                    margin-top: 1.5rem;
+
+                    a {
+                        color: var(--whiteColor);
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .porta {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                color: var(--PrimaryColor);
+
+                &:hover {
+                    color: var(--SecondaryColor);
+                }
+            }
+
         }
 
-        .navlist{
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-            margin: auto;
-            padding: .5rem;
+        .activeNavBar {
+            top: 7rem;
+        }
+
+    }
+
+    .togglenavbar {
+        .icon {
+            font-size: 25px;
+            color: var(--PrimaryColor);
+
+            &:hover {
+                color: var(--SecondaryColor);
+            }
         }
     }
 }
