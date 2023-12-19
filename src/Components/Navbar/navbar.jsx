@@ -17,7 +17,7 @@ function Navbar() {
                 <div className="logo">
                     <h1>FlexStars<Tb360View className="icon" /></h1>
                 </div>
-                <div className="navBar">
+                <div className={active}>
                     <ul className="navlist flex">
                         <li className="navItem">
                             <a href="#" className="navLink">Trabalhe conosco</a>
