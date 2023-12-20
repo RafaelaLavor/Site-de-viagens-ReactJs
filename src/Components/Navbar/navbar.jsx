@@ -11,13 +11,19 @@ function Navbar() {
         setActive("navBar activeNavBar")
     }
 
+    const removenav = () => {
+        setActive("navBar")
+    }
+
+
     return (
         <section className="navSection">
             <header className="header flex">
                 <div className="logo">
                     <h1>FlexStars<Tb360View className="icon" /></h1>
                 </div>
-                <div className={active}>
+                <div className={active
+                }>
                     <ul className="navlist flex">
                         <li className="navItem">
                             <a href="#" className="navLink">Trabalhe conosco</a>
@@ -35,12 +41,12 @@ function Navbar() {
                             <a href="#">Redirecionamento</a>
                         </button>
                     </ul>
-                    <div className="porta">
+                    <div className="porta" onClick={removenav}>
                         <RiDoorClosedLine className="icon" />
                     </div>
                 </div>
                 <div className="togglenavbar" onClick={shownav}>
-                    <PiDotsThreeOutlineBold className="icon"/>
+                    <PiDotsThreeOutlineBold className="icon" />
                 </div>
             </header>
         </section>

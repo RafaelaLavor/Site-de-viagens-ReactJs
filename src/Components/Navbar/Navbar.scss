@@ -24,6 +24,7 @@
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(2, 15, 29, 0.37);
 
+
     .logo {
         color: var(--blackColor);
         font-weight: 600;
@@ -49,6 +50,7 @@
             transform: translate(-50%);
             z-index: 2000;
             box-shadow: 0 2px 4px rgba(2, 15, 29, 0.9);
+            transition: .5s ease-in-out;
             padding: 1rem;
 
             .navlist {
