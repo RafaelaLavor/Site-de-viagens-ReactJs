@@ -24,12 +24,13 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0%;
+  top: 0;
   bottom: 0;
   z-index: 1;
   background-color: rgb(47, 106, 127);
+  mix-blend-mode: hard-light;
 }
-.home .overlay img {
+.home img {
   width: 100%;
   position: absolute;
   height: 100%;
@@ -37,4 +38,29 @@
   bottom: 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.home .homeContent {
+  width: 100%;
+  padding: 8rem 1.5rem 3rem;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  color: var(--whiteColor);
+  margin: auto;
+  justify-content: center;
+  align-items: stretch;
+  row-gap: 3rem;
+}
+.home .homeContent .textDiv {
+  padding: 2rem 0;
+}
+.home .homeContent .textDiv .smallText {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.home .homeContent .textDiv .homeTitle {
+  font-size: 1.8rem;
+  position: relative;
 }/*# sourceMappingURL=Home.css.map */
