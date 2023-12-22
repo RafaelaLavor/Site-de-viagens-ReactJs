@@ -66,5 +66,57 @@
                 position: relative;
             }
         }
+
+        .cardDiv {
+            background: var(--whiteColor);
+            padding: 2rem 1rem;
+            position: relative;
+            border-radius: 10px;
+            gap: 1rem;
+
+            label {
+                color: var(--textColor);
+                padding-bottom: 10px;
+                font-size: 15px;
+                font-weight: 600;
+                display: block;
+            }
+
+            .labelTotal {
+                justify-content: space-between;
+                align-items: center;
+
+                .total {
+                    color: var(--textColor);
+                    font-size: 18px;
+                }
+            }
+
+            .input {
+                background: var(--inputColor);
+                height: 40px;
+                padding: 0 1rem;
+                border-radius: 1rem;
+
+                input {
+                    background: none;
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    font-size: 14px;
+                    font-weight: 500;
+
+                    &::placeholder {
+                        font-size: 14px;
+                    }
+                }
+
+                .icon {
+                    color: var(--blackColor);
+                    font-size: 22px;
+                    margin-left: 10px;
+                }
+            }
+        }
     }
 }
