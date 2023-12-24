@@ -110,4 +110,41 @@
   color: var(--blackColor);
   font-size: 22px;
   margin-left: 10px;
+}
+.home .homeContent .cardDiv .searchOptions {
+  position: absolute;
+  background: var(--gradientColor);
+  width: -moz-max-content;
+  width: max-content;
+  bottom: -0.5rem;
+  padding: 5px 1rem;
+  border-radius: 1rem;
+  -moz-column-gap: 0.7rem;
+       column-gap: 0.7rem;
+  left: 50%;
+  transform: translate(-50%);
+  justify-content: center;
+  cursor: pointer;
+}
+.home .homeContent .cardDiv .searchOptions:hover {
+  background: var(--PrimaryColor);
+}
+.home .homeContent .cardDiv .searchOptions .icon {
+  font-size: 18px;
+}
+.home .homeContent .cardDiv .searchOptions span {
+  font-size: 15px;
+}
+.home .homeContent .homeFooter {
+  width: 100%;
+  justify-content: space-between;
+}
+.home .homeContent .homeFooter .icon {
+  font-size: 1.5rem;
+  margin: 0 5px;
+  color: var(--whiteColor);
+  font-weight: 600;
+}
+.home .homeContent .homeFooter .icon:hover {
+  color: var(--PrimaryColor);
 }/*# sourceMappingURL=Home.css.map */

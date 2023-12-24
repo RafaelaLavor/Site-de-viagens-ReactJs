@@ -2,6 +2,12 @@ import React from "react";
 import "./Home.css"
 import viao from "../../Assets/viao.jpg"
 import { TbGps } from "react-icons/tb";
+import { FaFilter } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { RiTwitterXFill } from "react-icons/ri";
+import { FaTwitch } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 
 
 const Home = () => {
@@ -45,6 +51,21 @@ const Home = () => {
                         <div className="input flex">
                             <input type="range" max="10000" min="1000" />
                         </div>
+                    </div>
+                    <div className="searchOptions flex">
+                        <FaFilter className="icon" />
+                        <span>FILTROS</span>
+                    </div>
+                </div>
+                <div className="homeFooter flex">
+                    <div className="rightIcons">
+                        <FaFacebook className="icon" />
+                        <FaInstagram className="icon" />
+                        <RiTwitterXFill className="icon" />
+                    </div>
+                    <div className="leftIcons flex">
+                        <FaTwitch className="icon" />
+                        <FaGithub className="icon" />
                     </div>
                 </div>
             </div>
