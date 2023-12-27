@@ -2,6 +2,7 @@ import React from "react";
 import "./Main.css"
 import img from "../../Assets/img.jpeg"
 import { GrMapLocation } from "react-icons/gr";
+import { FaClipboardList } from "react-icons/fa";
 
 const Data = [
     {
@@ -9,9 +10,9 @@ const Data = [
         imgsrc: img,
         destTitle: "Rio de janeiro",
         location: "Brasil",
-        grade: "",
-        fees: "630",
-        description: "CV"
+        grade: "FAUNA E FLORA",
+        fees: "$630",
+        description: "O Rio de Janeiro, conhecido como a 'Cidade Maravilhosa', encanta com suas praias deslumbrantes, como Copacabana e Ipanema, e o icônico Cristo Redentor no Corcovado. A energia vibrante do carnaval e a vida noturna agitada refletem a rica cultura carioca. Com trilhas na Floresta da Tijuca e a paixão pelo futebol no Maracanã, o Rio combina natureza exuberante e vida urbana pulsante, criando uma experiência única e inesquecível."
     },
     // {
     //     id: 2, 
@@ -44,11 +45,27 @@ const Main = () => {
                                         {destTitle}
                                     </h4>
                                     <span className="continent flex">
-                                        <GrMapLocation  className="icon"/>
+                                        <GrMapLocation className="icon" />
                                         <span className="name">
                                             {location}
                                         </span>
                                     </span>
+                                    <div className="fees flex">
+                                        <div className="grade">
+                                            <span>
+                                                {grade}
+                                            </span>
+                                        </div>
+                                        <div className="price">
+                                            <h5>{fees}</h5>
+                                        </div>
+                                    </div>
+                                    <div className="description">
+                                        <p>{description}</p>
+                                    </div>
+                                    <button className="btn flex">
+                                        DETALHES <FaClipboardList  className="icon"/>
+                                    </button>
                                 </div>
                             </div>
                         )

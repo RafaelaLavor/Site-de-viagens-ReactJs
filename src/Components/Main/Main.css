@@ -9,5 +9,88 @@
   --greyText: rgb(190, 190, 190);
   --inputColor: rgb(239, 239, 239);
   --bodyColor: rgb(240, 240, 246);
-  --cardBG: rgb(225,225,235);
+  --cardBG: rgb(225, 225, 235);
+  --cardHover: rgb(255, 255, 255);
+}
+
+.main {
+  width: 100%;
+}
+.main .divTitle .title {
+  color: var(--textColor);
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+  margin: 1rem 0;
+  z-index: 2;
+}
+.main .divTitle .title::after {
+  background: var(--SecondaryColor);
+  position: absolute;
+  height: 5px;
+  width: 86px;
+  content: "";
+  z-index: -1;
+  right: 0;
+  bottom: 5px;
+}
+.main .secContent {
+  justify-content: center;
+  gap: 1.5rem;
+}
+.main .secContent .singleDiv {
+  height: 100%;
+  display: grid;
+  background: var(--cardBG);
+  row-gap: 10px;
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(140, 140, 140, 0.5);
+}
+.main .secContent .singleDiv:hover {
+  box-shadow: 1 4px 4px rgba(85, 85, 114, 0.5);
+  background: var(--cardHover);
+  transition: 0.3s ease;
+}
+.main .secContent .singleDiv .imgDiv {
+  width: 100%;
+  overflow: hidden;
+  height: 180px;
+}
+.main .secContent .singleDiv .imgDiv:hover img {
+  transform: scale(1.1);
+}
+.main .secContent .singleDiv .imgDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 2s ease;
+}
+.main .secContent .singleDiv .cardInfo {
+  padding: 1rem;
+}
+.main .secContent .singleDiv .cardInfo .destTitle {
+  color: var(--blackColor);
+  font-size: 1.25rem;
+}
+.main .secContent .singleDiv .cardInfo .continent {
+  gap: 0.5rem;
+}
+.main .secContent .singleDiv .cardInfo .continent .icon {
+  font-size: 18px;
+  color: var(--textColor);
+}
+.main .secContent .singleDiv .cardInfo .continent .name {
+  color: var(--blackColor);
+  font-weight: 400;
+  font-size: 1rem;
+}
+.main .secContent .singleDiv .cardInfo .fees {
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-top: 1.5px solid var(--greyText);
+  border-bottom: 1.5px solid var(--greyText);
 }/*# sourceMappingURL=Main.css.map */
