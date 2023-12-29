@@ -93,4 +93,32 @@
   margin: 1rem 0;
   border-top: 1.5px solid var(--greyText);
   border-bottom: 1.5px solid var(--greyText);
+}
+.main .secContent .singleDiv .cardInfo .fees .grade {
+  color: var(--textColor);
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100px;
+}
+.main .secContent .singleDiv .cardInfo .fees .price {
+  color: var(--blackColor);
+  font-size: 1.8rem;
+}
+.main .secContent .singleDiv .cardInfo .description {
+  color: var(--textColor);
+  font-weight: 500;
+  font-size: 14px;
+}
+.main .secContent .singleDiv .cardInfo .btn {
+  gap: 0.5rem;
+  color: var(--whiteColor);
+  font-weight: 600;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+.main .secContent .singleDiv .cardInfo .btn .icon {
+  align-self: center;
+  font-size: 18px;
 }/*# sourceMappingURL=Main.css.map */

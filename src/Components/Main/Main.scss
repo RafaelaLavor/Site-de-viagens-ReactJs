@@ -97,13 +97,47 @@
 						font-size: 1rem;
 					}
 				}
-				.fees{
+
+				.fees {
 					width: 100%;
 					justify-content: space-between;
 					padding: 1rem;
 					margin: 1rem 0;
 					border-top: 1.5px solid var(--greyText);
 					border-bottom: 1.5px solid var(--greyText);
+
+					.grade {
+						color: var(--textColor);
+						line-height: 20px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						max-width: 100px;
+					}
+
+					.price {
+						color: var(--blackColor);
+						font-size: 1.8rem;
+					}
+				}
+
+				.description {
+					color: var(--textColor);
+					font-weight: 500;
+					font-size: 14px;
+				}
+
+				.btn {
+					gap: 0.5rem;
+					color: var(--whiteColor);
+					font-weight: 600;
+					margin-top: 1rem;
+					justify-content: space-between;
+
+					.icon{
+						align-self: center;
+						font-size: 18px;
+					}
 				}
 			}
 		}

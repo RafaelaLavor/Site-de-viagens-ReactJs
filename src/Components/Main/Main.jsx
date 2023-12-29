@@ -3,26 +3,27 @@ import "./Main.css"
 import img from "../../Assets/img.jpeg"
 import { GrMapLocation } from "react-icons/gr";
 import { FaClipboardList } from "react-icons/fa";
+import img2 from "../../Assets/img2.jpg"
 
 const Data = [
     {
         id: 1,
         imgsrc: img,
         destTitle: "Rio de janeiro",
-        location: "Brasil",
+        location: "Brasil, Rio de janeiro",
         grade: "FAUNA E FLORA",
         fees: "$630",
-        description: "O Rio de Janeiro, conhecido como a 'Cidade Maravilhosa', encanta com suas praias deslumbrantes, como Copacabana e Ipanema, e o icônico Cristo Redentor no Corcovado. A energia vibrante do carnaval e a vida noturna agitada refletem a rica cultura carioca. Com trilhas na Floresta da Tijuca e a paixão pelo futebol no Maracanã, o Rio combina natureza exuberante e vida urbana pulsante, criando uma experiência única e inesquecível."
+        description: "O Rio de Janeiro, conhecido como a 'Cidade Maravilhosa', encanta com suas praias deslumbrantes, como Copacabana e Ipanema, e o icônico Cristo Redentor no Corcovado. A energia vibrante do carnaval e a vida noturna agitada refletem a rica cultura carioca."
     },
-    // {
-    //     id: 2, 
-    //     imgsrc: img2,
-    //     destTitle: "Natal",
-    //     location: "Brasil",
-    //     grade: "",
-    //     fees: "830",
-    //     description: "Norte"
-    // },
+    {
+        id: 2,
+        imgsrc: img2,
+        destTitle: "Natal",
+        location: "Brasil, Rio grande do Norte",
+        grade: "ÁGUAS CRISTALINAS",
+        fees: "$830",
+        description: "Natal, a cidade do sol no Rio Grande do Norte, encanta com suas praias de areias douradas, como Ponta Negra e Genipabu. Conhecida pela hospitalidade e cultura rica, Natal oferece uma experiência única, onde dunas, lagoas e festivais locais criam lembranças inesquecíveis à beira-mar."
+    },
 
 ]
 const Main = () => {
@@ -64,7 +65,7 @@ const Main = () => {
                                         <p>{description}</p>
                                     </div>
                                     <button className="btn flex">
-                                        DETALHES <FaClipboardList  className="icon"/>
+                                        DETALHES <FaClipboardList className="icon" />
                                     </button>
                                 </div>
                             </div>
