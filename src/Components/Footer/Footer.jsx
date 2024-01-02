@@ -40,7 +40,7 @@ const Footer = () => {
                         <div className="footerParagraph">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur illo, ipsum maxime eum magni nobis nihil dolorem aperiam quo itaque, aliquid nisi. Nemo, qui sit. Dolorem, sint impedit? Eaque, exercitationem.
                         </div>
-                        <div className="footerSocial">
+                        <div className="footerSocial flex">
                             <FaFacebook className="icon" />
                             <FaInstagram className="icon" />
                             <RiTwitterXFill className="icon" />
@@ -68,6 +68,30 @@ const Footer = () => {
                                 Serviços
                             </li>
                         </div>
+                        <div className="linkGroup">
+                            <span className="groupTitle">NOSSOS PARCEIROS</span>
+
+                            <li className="footerList flex">
+                                <FaChevronRight className="icon" />
+                                Rafaela
+                            </li>
+                            <li className="footerList flex">
+                                <FaChevronRight className="icon" />
+                                Ademir
+                            </li>
+                            <li className="footerList flex">
+                                <FaChevronRight className="icon" />
+                                ChatGpt
+                            </li>
+                            <li className="footerList flex">
+                                <FaChevronRight className="icon" />
+                                Spotify
+                            </li>
+                        </div>
+                    </div>
+                    <div className="footerDiv flex">
+                        <small>MELHOR SITE DE VIAGENS DO MUNDO</small>
+                        <small>COPYRIGHTS RESERVED - Y4NKLER</small>
                     </div>
                 </div>
             </div>

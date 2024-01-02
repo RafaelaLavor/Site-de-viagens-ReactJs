@@ -113,4 +113,78 @@
   flex-direction: column;
   align-items: flex-start;
   overflow: hidden;
+}
+.footer .secContent .footerCard .footerIntro {
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.footer .secContent .footerCard .logoDiv .logo {
+  color: var(--blackColor);
+  font-weight: 600;
+}
+.footer .secContent .footerCard .logoDiv .logo .icon {
+  font-size: 25px;
+  color: var(--PrimaryColor);
+}
+.footer .secContent .footerCard .footerParagraph {
+  font-size: 1rem;
+  color: var(--textColor);
+}
+.footer .secContent .footerCard .footerSocial {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.footer .secContent .footerCard .footerSocial .icon {
+  color: var(--blackColor);
+  font-size: 25px;
+}
+.footer .secContent .footerCard .footerSocial .icon:hover {
+  color: var(--PrimaryColor);
+}
+.footer .secContent .footerCard .footerLinks {
+  width: 100%;
+  gap: 1rem;
+  flex-basis: 50%;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .groupTitle {
+  display: block;
+  color: var(--blackColor);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList {
+  font-size: 15px;
+  color: var(--textColor);
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList .icon {
+  font-size: 15px;
+  color: var(--blackColor);
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList:hover {
+  color: var(--PrimaryColor);
+  transform: translateX(7px);
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList:hover .icon {
+  color: var(--SecondaryColor);
+}
+.footer .secContent .footerCard .footerDiv {
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--SecondaryColor);
+  padding: 0.5rem 2rem;
+}
+.footer .secContent .footerCard .footerDiv small {
+  font-size: 10px;
+  color: var(--whiteColor);
 }/*# sourceMappingURL=Footer.css.map */

@@ -20,21 +20,26 @@ body {
 }
 
 :root {
-	--PrimaryColor: hsl(199, 100%, 33%);
-	--SecondaryColor: hsl(187, 85%, 43%);
-	--gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
-	--whiteColor: hsl(0, 0%, 100%);
-	--blackColor: hsl(201, 33%, 16%);
-	--textColor: hsl(240, 4%, 36%);
-	--whiteColorDeam: hsl(0, 0%, 93%);
-	--greyText: rgb(190, 190, 190);
-	--inputColor: rgb(239, 239, 239);
-	--bodyColor: rgb(240, 240, 246);
-	--cardBG: rgb(225,225,235);
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
 }
 
 .section {
     padding: 4rem 0 2rem;
+}
+
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .flex {
@@ -47,7 +52,7 @@ body {
     align-items: center;
 }
 
-.btn{
+.btn {
     background: var(--gradientColor);
     border: none;
     border-radius: 3rem;
@@ -56,16 +61,26 @@ body {
     padding: 0.6rem 1.5rem;
 }
 
-.btn a{
-    color:  var(--whiteColor);
+.btn a {
+    color: var(--whiteColor);
     font-weight: 500;
 }
 
-.btn:hover{
+.btn:hover {
     background: var(--SecondaryColor);
 }
- 
-.icon{
+
+.icon {
     font-size: 2rem;
     align-items: center;
+}
+
+img,
+video {
+    width: 100%;
+    height: auto;
+}
+
+.input{
+    font-size: 100%;
 }
