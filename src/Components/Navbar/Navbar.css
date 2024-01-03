@@ -95,4 +95,54 @@
 }
 .header .togglenavbar .icon:hover {
   color: var(--SecondaryColor);
+}
+
+@media screen and (min-width: 769px) {
+  .porta,
+  .togglenavbar {
+    display: none;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  .header .logo {
+    font-size: 13px;
+  }
+  .header .navBar .navlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .header .navBar .navlist .navItem .navLink {
+    color: var(--textColor);
+    padding: 0 0.4rem;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+  }
+  .header .navBar .navlist .navItem .navLink:hover {
+    color: var(--PrimaryColor);
+  }
+  .header .navBar .navlist .btn {
+    margin-left: 1rem;
+  }
+  .header .navBar .navlist .btn a {
+    color: var(--whiteColor);
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 960px) {
+  .header .navBar .navlist .navItem {
+    padding: 0 0.7rem;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .header {
+    padding: 1rem 8.5rem;
+  }
+  .header .navBar .navlist .navItem .navLink {
+    font-size: 1.1rem;
+  }
 }/*# sourceMappingURL=Navbar.css.map */

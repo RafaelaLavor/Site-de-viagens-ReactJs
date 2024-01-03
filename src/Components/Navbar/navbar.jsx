@@ -38,7 +38,7 @@ function Navbar() {
                             <a href="#" className="navLink">Sobre nós</a>
                         </li>
                         <button className="btn">
-                            <a href="#">Redirecionamento</a>
+                            <a href="#">RESERVAS</a>
                         </button>
                     </ul>
                     <div className="porta" onClick={removenav}>

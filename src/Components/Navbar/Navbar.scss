@@ -114,3 +114,80 @@
         }
     }
 }
+
+@media screen and (min-width: 769px) {
+
+    .porta,
+    .togglenavbar {
+        display: none;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+
+        .logo {
+            font-size: 13px;
+        }
+
+        .navBar {
+            .navlist {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+
+                .navItem {
+                    .navLink {
+                        color: var(--textColor);
+                        padding: 0 .4rem;
+                        font-size: 14px;
+                        font-weight: 500;
+                        display: flex;
+                        justify-content: center;
+
+                        &:hover {
+                            color: var(--PrimaryColor);
+                        }
+                    }
+                }
+
+                .btn {
+                    margin-left: 1rem;
+
+                    a {
+                        color: var(--whiteColor);
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .header {
+        .navBar {
+            .navlist {
+                .navItem {
+                    padding: 0 .7rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .header {
+        padding: 1rem 8.5rem;
+
+        .navBar {
+            .navlist {
+                .navItem {
+                    .navLink{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+}
