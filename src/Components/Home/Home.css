@@ -169,8 +169,24 @@
   }
 }
 @media screen and (min-width: 1240px) {
+  .home {
+    height: 95vh;
+  }
   .home .homeContent {
     padding-left: 0;
     padding-right: 0;
+  }
+  .home .homeContent .cardDiv {
+    padding: 2rem 1rem;
+  }
+  .home .homeContent .cardDiv .input {
+    margin-bottom: 1rem;
+  }
+  .home .homeContent .cardDiv .searchOptions {
+    padding: 8px 1rem;
+    bottom: -1rem;
+  }
+  .home .homeContent .cardDiv .searchOptions span {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=Home.css.map */

@@ -121,4 +121,24 @@
 .main .secContent .singleDiv .cardInfo .btn .icon {
   align-self: center;
   font-size: 18px;
+}
+
+@media screen and (min-width: 500px) {
+  .divTitle .title {
+    font-size: 1.5rem;
+  }
+  .divTitle .title::after {
+    width: 109px !important;
+  }
+  .secContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .secContent .singleDiv {
+    height: auto;
+  }
+}
+@media screen and (min-width: 840px) {
+  .secContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }/*# sourceMappingURL=Main.css.map */
