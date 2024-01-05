@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react"
 import "./Home.css"
 import viao from "../../Assets/viao.jpg"
 import { TbGps } from "react-icons/tb";
@@ -9,19 +9,26 @@ import { RiTwitterXFill } from "react-icons/ri";
 import { FaTwitch } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 
 const Home = () => {
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, [])
     return (
         <section className="home">
             <div className="overlay"></div>
             <img src={viao} alt="0" className="fundo" />
             <div className="homeContent container">
                 <div className="textDiv">
-                    <span className="smallText">Nossos Pacotes</span>
-                    <h1 className="homeTitle">Viaje Conosco</h1>
+                    <span data-aos="fade-up"
+                        className="smallText">Nossos Pacotes</span>
+                    <h1 data-aos="fade-up" className="homeTitle">Viaje Conosco</h1>
                 </div>
 
-                <div className="cardDiv grid">
+                <div data-aos="fade-up" className="cardDiv grid">
                     <div className="destinetionInput">
                         <label htmlFor="city">
                             <p>Procure seu destino</p>

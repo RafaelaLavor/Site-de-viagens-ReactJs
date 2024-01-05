@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Footer.css"
 import video from "../../Assets/seafooter.mp4"
 import { RiMailSendLine } from "react-icons/ri";
@@ -9,7 +9,13 @@ import { RiTwitterXFill } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 const Footer = () => {
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, [])
     return (
         <section className="footer">
             <div className="videoDiv">
@@ -17,7 +23,7 @@ const Footer = () => {
                 </video>
             </div>
 
-            <div className="secContent container">
+            <div data-aos="fade-up" className="secContent container">
                 <div className="contactDiv flex">
                     <div className="text">
                         <small>ENTREM EM CONTATO</small>

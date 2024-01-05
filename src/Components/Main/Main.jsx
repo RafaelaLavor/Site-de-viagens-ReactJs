@@ -1,9 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Main.css"
 import img from "../../Assets/img.jpeg"
 import { GrMapLocation } from "react-icons/gr";
 import { FaClipboardList } from "react-icons/fa";
 import img2 from "../../Assets/img2.jpg"
+
+import Aos from "aos";
+import "aos/dist/aos.css" 
 
 const Data = [
     {
@@ -27,6 +30,9 @@ const Data = [
 
 ]
 const Main = () => {
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, [])
     return (
         <section className="main container section">
             <div className="divTitle">
@@ -37,7 +43,7 @@ const Main = () => {
                     Data.map(({ id, imgsrc, destTitle, location, grade, fees,
                         description }) => {
                         return (
-                            <div className="singleDiv" key={id}>
+                            <div data-aos="fade-up" className="singleDiv" key={id}>
                                 <div className="imgDiv">
                                     <img src={imgsrc} alt={destTitle} />
                                 </div>
