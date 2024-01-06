@@ -100,7 +100,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 100px;
+  max-width: 150px;
 }
 .main .secContent .singleDiv .cardInfo .fees .price {
   color: var(--blackColor);
